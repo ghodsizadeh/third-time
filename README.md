@@ -22,7 +22,8 @@ You can read more about the technique
 1. Download the latest binary from the [releases page](https://github.com/ghodsizadeh/ThirdTime/releases)
 2. Run the binary
 ```bash
-$ ./ThirdTime
+$ ./third-time
+
 Elapsed: 30m00.000s
 
 s stop • t start rest • r reset • q quit
@@ -43,5 +44,5 @@ s stop • t start rest • r reset • q quit
    
    You can change the fraction of the rest time by adding `-f` flag
 ```bash
-$ ./ThirdTime -f 4
+$ ./third-time -f 4
 ```
