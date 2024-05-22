@@ -1,0 +1,53 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories
+vendor/
+
+# Compiled Object files, Static and Dynamic libs
+*.o
+*.a
+*.so
+
+# Go Modules
+.go/
+.cache/
+.env
+
+# Output
+# *.log
+# *.log.*
+# *.pid
+# *.pid.*
+# *.trace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+.fseventsd
+.DocumentRevisions-V100
+.fseventsd
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
