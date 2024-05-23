@@ -76,6 +76,6 @@ func showHistory() error {
 		rows++
 
 	}
-	fmt.Printf("Average time: %d minutes\n", avg/rows/60)
+	fmt.Printf("Average time: %d minutes\n", avg/rows)
 	return nil
 }

@@ -49,5 +49,14 @@ s stop • t start rest • r reset • q quit
 ```bash
 $ ./third-time -f 4
 ```
+5. You can check history by adding `x` flag
+```bash
+
+$ ./third-time x
+Duration,Date,Fraction
+2,2024-05-23,21:37,3
+1,2024-05-23,21:55,3
+Average time: 0 minutes
+```
 
 

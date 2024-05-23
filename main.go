@@ -106,7 +106,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			m.resting = true
 			// update the history
 			writeHistory(workHistory{
-				duration: int(elapsedTime.Seconds()),
+				duration: int(elapsedTime.Minutes()),
 				date:     time.Now().Format("2006-01-02"),
 				time:     time.Now().Format("15:04"),
 				fraction: m.fraction,
