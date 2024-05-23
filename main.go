@@ -104,6 +104,13 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			restTime := elapsedTime / time.Duration(m.fraction)
 			m.timer = timer.NewWithInterval(restTime, time.Millisecond)
 			m.resting = true
+			// update the history
+			writeHistory(workHistory{
+				duration: int(elapsedTime.Seconds()),
+				date:     time.Now().Format("2006-01-02"),
+				time:     time.Now().Format("15:04"),
+				fraction: m.fraction,
+			})
 			m.timer.Init()
 			return m, m.timer.Start()
 		case key.Matches(msg, m.keymap.start, m.keymap.stop):
@@ -119,7 +126,12 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 func main() {
 	fraction := flag.Int("f", 3, "How you much you want to rest after each time")
+	history := flag.Bool("x", false, "Show history")
 	flag.Parse()
+	if *history {
+		showHistory()
+		return
+	}
 
 	m := model{
 		stopwatch: stopwatch.NewWithInterval(time.Millisecond),
