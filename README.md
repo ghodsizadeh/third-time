@@ -19,7 +19,10 @@ You can read more about the technique
 
 ## How to use ThirdTime? 
 
-1. Download the latest binary from the [releases page](https://github.com/ghodsizadeh/ThirdTime/releases)
+1. Download the latest binary from the [releases page](https://github.com/ghodsizadeh/third-time/releases), or by using `go install`:
+```bash
+$ go install github.com/ghodsizadeh/third-time
+```
 2. Run the binary
 ```bash
 $ ./third-time
@@ -46,3 +49,5 @@ s stop • t start rest • r reset • q quit
 ```bash
 $ ./third-time -f 4
 ```
+
+
