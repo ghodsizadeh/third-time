@@ -1,5 +1,4 @@
-module thirdTime
-
+module github.com/ghodsizadeh/third-time
 go 1.22.2
 
 require (
